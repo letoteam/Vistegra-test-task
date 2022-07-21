@@ -1,0 +1,13 @@
+.item{
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 200px 1fr 100px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.item:last-child{
+    margin-bottom: 0;
+}

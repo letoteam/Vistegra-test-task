@@ -1,0 +1,8 @@
+.sectionTitle{
+    font-size: 30px;
+}
+
+.sectionContainer{
+    overflow: auto;
+    max-height: 500px;
+}
