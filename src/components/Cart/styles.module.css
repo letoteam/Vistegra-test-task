@@ -3,3 +3,17 @@
     max-height: 500px;
     padding-right: 10px;
 }
+
+.noItemsText{
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgrey;
+}
+
+.sum{
+    color: #2980b9;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: underline;
+}
