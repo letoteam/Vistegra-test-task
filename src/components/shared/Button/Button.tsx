@@ -1,11 +1,11 @@
-import React, { MouseEventHandler } from "react";
+import React from "react";
 import styles from "./styles.module.css";
 
 type ButtonProps = {
   text: string;
   appearance: "primary" | "success" | "warning" | "danger";
   round: 0 | 1 | 2;
-  onClick: MouseEventHandler<HTMLButtonElement>;
+  onClick: Function;
 };
 
 export default function Button({
@@ -21,7 +21,7 @@ export default function Button({
     <button
       className={`${styles.btn} ${styles[appearanceClassName]} ${styles[roundClassName]}`}
       type="button"
-      onClick={onClick}
+      onClick={() => onClick()}
     >
       {text}
     </button>

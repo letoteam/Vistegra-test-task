@@ -1,0 +1,5 @@
+.cart{
+    overflow-y: auto;
+    max-height: 500px;
+    padding-right: 10px;
+}

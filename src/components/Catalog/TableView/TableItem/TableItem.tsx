@@ -1,14 +1,14 @@
-import React, { MouseEventHandler, useState } from "react";
+import React from "react";
 import styles from "./styles.module.css";
-import Button from "../Button/Button";
-import { FormattedItem } from "../../../types/FormattedItem";
+import Button from "../../../shared/Button/Button";
+import { FormattedItem } from "../../../../types/FormattedItem";
 
-type CardProps = {
+type CardItemProps = {
   item: FormattedItem;
-  onClick: MouseEventHandler<HTMLButtonElement>;
+  addItem: Function;
 };
 
-export default function ItemRow({ item, onClick }: CardProps) {
+export default function TableItem({ item, addItem }: CardItemProps) {
   const { pictureUrl, name, price } = item;
 
   return (
@@ -22,7 +22,7 @@ export default function ItemRow({ item, onClick }: CardProps) {
         text="Add to Cart"
         round={1}
         appearance="primary"
-        onClick={onClick}
+        onClick={addItem}
       />
     </div>
   );

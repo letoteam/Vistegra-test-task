@@ -1,1 +1,1 @@
-export type View = "table" | "view";
+export type View = "table" | "list";
